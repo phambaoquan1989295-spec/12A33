@@ -1,0 +1,192 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f6fb;
+color:#222;
+transition:0.4s ease;
+}
+
+#dark-toggle{
+display:none;
+}
+
+.toggle-btn{
+position:fixed;
+top:20px;
+right:20px;
+background:#111;
+color:white;
+padding:10px 14px;
+border-radius:50px;
+cursor:pointer;
+z-index:1000;
+transition:0.3s;
+}
+
+.toggle-btn:hover{
+transform:scale(1.1);
+}
+
+.hero{
+height:100vh;
+background:linear-gradient(135deg,#4e73df,#1cc88a);
+color:white;
+display:flex;
+flex-direction:column;
+position:relative;
+overflow:hidden;
+}
+
+.bg-blur{
+position:absolute;
+width:600px;
+height:600px;
+background:radial-gradient(circle,rgba(255,255,255,0.3),transparent 70%);
+top:-200px;
+right:-200px;
+filter:blur(80px);
+animation:moveGlow 8s infinite alternate ease-in-out;
+}
+
+@keyframes moveGlow{
+from{transform:translate(0,0);}
+to{transform:translate(-120px,120px);}
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(10px);
+border-radius:50px;
+margin:20px;
+}
+
+.logo{
+font-weight:bold;
+font-size:18px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+position:relative;
+}
+
+.menu a::after{
+content:"";
+width:0;
+height:2px;
+background:white;
+position:absolute;
+left:0;
+bottom:-4px;
+transition:0.3s;
+}
+
+.menu a:hover::after{
+width:100%;
+}
+
+.hero-content{
+margin:auto;
+text-align:center;
+width:60%;
+animation:fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(40px);}
+to{opacity:1;transform:translateY(0);}
+}
+
+.hero-content h1{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:18px;
+margin-bottom:30px;
+}
+
+.btn{
+background:white;
+color:#4e73df;
+padding:12px 25px;
+text-decoration:none;
+border-radius:30px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#e2e6ff;
+transform:translateY(-3px);
+}
+
+section{
+padding:80px 20px;
+}
+
+.container{
+width:80%;
+margin:auto;
+}
+
+.card{
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+th,td{
+padding:12px;
+border-bottom:1px solid #ddd;
+}
+
+footer{
+background:#2e59d9;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* DARK MODE XANH TÍM */
+
+#dark-toggle:checked ~ .hero{
+background:linear-gradient(135deg,#1e1f3f,#2b2d66);
+}
+
+#dark-toggle:checked ~ section{
+background:#1c1d3a;
+color:#e0e4ff;
+}
+
+#dark-toggle:checked ~ section .card{
+background:#262860;
+}
+
+#dark-toggle:checked ~ footer{
+background:#161736;
+}
