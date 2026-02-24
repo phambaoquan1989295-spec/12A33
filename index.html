@@ -2,103 +2,77 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hành Trình Tri Thức</title>
+<title>12A3 - Tập thể đoàn kết</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<input type="checkbox" id="dark-toggle">
-<label for="dark-toggle" class="toggle-btn">🌙</label>
-
-<header class="hero">
-    <div class="bg-blur"></div>
-
-    <nav>
-        <div class="logo">HÀNH TRÌNH TRI THỨC</div>
-        <div class="menu">
-            <a href="#about">Giới thiệu</a>
-            <a href="#members">Thành viên</a>
-            <a href="#activities">Hoạt động</a>
-            <a href="#achievements">Thành tựu</a>
-        </div>
-    </nav>
-
-    <div class="hero-content">
-        <h1>Kiến tạo nền tảng – Dẫn lối tương lai</h1>
-        <p>
-            Không chỉ là một tập thể học tập, đây là môi trường nơi tư duy được rèn luyện,
-            bản lĩnh được thử thách và khát vọng được nuôi dưỡng để mỗi cá nhân
-            phát triển toàn diện trong một thế giới luôn vận động.
-        </p>
-        <a href="#about" class="btn">Khám phá</a>
-    </div>
+<header class="fade-in">
+    <h1>🌟 TẬP THỂ LỚP 12A3 🌟</h1>
+    <p>Đoàn kết - Năng động - Thành công</p>
 </header>
 
-<section id="about">
-    <div class="container">
-        <div class="card">
-            <h2>Về chúng tôi</h2>
-            <p>
-                Chúng tôi định hướng xây dựng một môi trường học tập kỷ luật,
-                chủ động và sáng tạo. Mỗi thành viên không chỉ tiếp thu kiến thức
-                mà còn phát triển tư duy phản biện, năng lực hợp tác
-                và tinh thần trách nhiệm để sẵn sàng chinh phục những mục tiêu dài hạn.
-            </p>
-        </div>
+<nav>
+    <a href="#gioithieu">Giới thiệu</a>
+    <a href="#hoatdong">Hoạt động</a>
+    <a href="#thanhtuu">Thành tựu</a>
+    <a href="#thanhvien">Thành viên</a>
+    <a href="#video">Video</a>
+</nav>
+
+<section id="gioithieu" class="card slide-left">
+    <h2>Giới thiệu</h2>
+    <p>
+        12A3 là một tập thể đoàn kết, luôn cố gắng hết mình trong học tập
+        và phong trào. Chúng tôi không chỉ là một lớp học,
+        mà là một gia đình.
+    </p>
+</section>
+
+<section id="hoatdong" class="card slide-right">
+    <h2>Hoạt động</h2>
+    <ul>
+        <li>Văn nghệ 20/11</li>
+        <li>Hội trại truyền thống</li>
+        <li>Thi đấu thể thao</li>
+        <li>Hoạt động tình nguyện</li>
+    </ul>
+</section>
+
+<section id="thanhtuu" class="card slide-left">
+    <h2>Thành tựu</h2>
+    <ul>
+        <li>Giải Nhất văn nghệ</li>
+        <li>Top lớp học tập tốt</li>
+        <li>Giải Nhì bóng đá</li>
+    </ul>
+</section>
+
+<section id="thanhvien" class="card slide-right">
+    <h2>Thành viên lớp</h2>
+    <div class="member-grid">
+        <div class="member">Phạm Hoàng Bảo Quân</div>
+        <div class="member">Lê Hồng Lâm</div>
+        <div class="member">Phương Uyên</div>
+        <div class="member">Bảo Hân</div>
+        <div class="member">Khánh Hưng</div>
+        <div class="member">Đình Đạt</div>
+        <div class="member">Đào Minh Hiếu</div>
+        <div class="member">Hoàng Nam</div>
     </div>
 </section>
 
-<section id="members">
-    <div class="container">
-        <div class="card">
-            <h2>Thành viên</h2>
-            <ul>
-                <li>Quân Bao</li>
-                <li>Bao Quan</li>
-                <li>Quan</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<section id="activities">
-    <div class="container">
-        <div class="card">
-            <h2>Hoạt động</h2>
-            <p>📘 Học nhóm định kỳ</p>
-            <p>📂 Chia sẻ tài liệu</p>
-            <p>🎯 Luyện đề & ôn tập</p>
-            <p>💡 Thảo luận phát triển tư duy</p>
-        </div>
-    </div>
-</section>
-
-<section id="achievements">
-    <div class="container">
-        <div class="card">
-            <h2>Thành tựu</h2>
-            <table>
-                <tr>
-                    <th>Năm</th>
-                    <th>Dấu mốc</th>
-                </tr>
-                <tr>
-                    <td>2025</td>
-                    <td>Tiến bộ vượt bậc trong học tập</td>
-                </tr>
-                <tr>
-                    <td>2026</td>
-                    <td>Đạt thành tích cao trong các kỳ đánh giá</td>
-                </tr>
-            </table>
-        </div>
-    </div>
+<section id="video" class="video-section slow-appear">
+    <h2>Video kỷ niệm lớp</h2>
+    <video controls class="small-video">
+        <source src="video.mp4" type="video/mp4">
+        Trình duyệt không hỗ trợ video.
+    </video>
 </section>
 
 <footer>
-    © 2026 Hành Trình Tri Thức | Designed by Quân Bao
+    <p>© 2026 - Lớp 12A3</p>
+    <p class="edit">Edit by Tổ 4</p>
 </footer>
 
 </body>
